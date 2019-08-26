@@ -31,16 +31,16 @@ class News extends React.Component {
         console.log(items)
 
         if(!isLoaded) {
-            return <div> Loading... </div>
+            return <div className='loading'> Loading... </div>
         } else {
             return (
-                <div>
+                <div className='news-fetch'>
                     <ul>
                         {
                             items.Items.map((item) => (
                                 <li>
                                     <h1 className='title'>{item.Title}</h1>
-                                    <img src={item.Image || ''} alt='' />
+                                    <img className='thumb' src={item.Image || ''} alt='' />
                                     <Link to={`/news/${item.$id}`}><h2 className='summary'> {item.Summary || 'No summary available'} </h2></Link>
                                     <hr/>
                                 </li>

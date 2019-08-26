@@ -31,10 +31,10 @@ class NewsBody extends React.Component {
         console.log()
 
         if(!isLoaded) {
-            return <div> Loading... </div>
+            return <div className='loading'> Loading... </div>
         } else {
             return (
-                <div>
+                <div className='body-news'>
                     <ul>
                         {
                             //Alterar para o método Filter()
@@ -48,7 +48,7 @@ class NewsBody extends React.Component {
 
                                     {
                                         item.$id === this.props.match.params.id ? 
-                                        <h3 className='news-body'>{removeHTMLTags(item.Body)}</h3> : ''
+                                        <h3 className='body'>{removeHTMLTags(item.Body)}</h3> : ''
                                     }
                                     <hr/>
                                 </li>

@@ -2,8 +2,8 @@ import React from 'react'
 
 const About = () => {
     return (
-        <div>
-            <h1>Nós somos... A turma que mais fuma maconha...</h1>
+        <div className='about'>
+            <h1>Nossa missão é trazer histórias do povo para o povo, promover o bom jornalismo através da narrativa das massas, viver os ideais da comunicação e servir ao povo brasileiro em sua libertação dos grandes conglomerados da mídia corporativa.</h1>
         </div>
     )
 }

@@ -8,6 +8,7 @@ import Business from '../components/Business'
 import NotFound from '../components/NotFound'
 import Footer from '../components/Footer'
 import NewsBody from '../components/NewsBody'
+import FeedRSS from '../components/FeedRSS'
 
 const AppRouter = () => {
     return (
@@ -20,6 +21,7 @@ const AppRouter = () => {
                     <Route exact path='/news' component={News}/>
                     <Route exact path='/news/:id' component={NewsBody}/>
                     <Route exact path='/business' component={Business}/>
+                    <Route exact path='/feedrss' component={FeedRSS}/>
                     <Route component={NotFound}/>
                 </Switch>
                 <Footer />
